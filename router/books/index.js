@@ -149,6 +149,7 @@ router.delete('/api/v1/books/delete/:book_id', function(req, res){
 
 });
 
+//@TODO: FINISH THIS METHOD
 router.post('/api/v1/books/upload_image/', function(req, res){
     return fbConnector.firebaseAuth.signInWithCustomToken(req.headers.usertoken).then(function(){
 

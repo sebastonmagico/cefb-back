@@ -3,7 +3,7 @@
 var firebase = require('firebase');
 var admin = require('firebase-admin');
 var utils = require('./utils');
-var serviceAccount = require("./cefb-library-bbdd-firebase-adminsdk-mmo9w-80cd9ac738.json");
+var serviceAccount = require("./YOUR_FIREBASE_CREDENTIALS.json");
 
 var projectID = 'cefb-library-bbdd';
 var bucketName = projectID + '.appspot.com';
@@ -18,11 +18,11 @@ var bucket = gcs.bucket(bucketName);
 
 
 var clientConfig = {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    storageBucket: "",
-    messagingSenderId: ""
+    apiKey: "YOUR_FIREBASE_APIKEY",
+    authDomain: "YOUR_FIREBASE_AUTHDOMAIN",
+    databaseURL: "YOUR_FIREBASE_DATABASEURL",
+    storageBucket: "YOUR_FIREBASE_STORAGEBUCKET",
+    messagingSenderId: "YOUR_FIREBASE_MESSAGINGSENDERID"
 };
 
 var firebaseConnector = firebase.initializeApp(clientConfig);
